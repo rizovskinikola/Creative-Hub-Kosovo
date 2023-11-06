@@ -1,0 +1,47 @@
+.f-43
+{
+    font-size: 43px;
+    font-weight: 900;
+}
+.f-32
+{
+  font-size: 32px;
+  font-weight: 900;
+}
+.f-24
+{
+    font-size: 24px;
+}
+
+.f-18
+{
+    font-size: 18px;
+}
+
+.fw-700
+{
+  font-weight: 700;
+}
+
+.fw-600
+{
+  font-weight: 600;
+}
+@media only screen and (max-width: 758px) {
+    .f-43
+    {
+        font-size: 24px;
+    }
+    .f-32
+    {
+        font-size: 20px;
+    }
+    .f-24
+    {
+        font-size: 18px;
+    }
+    .f-18
+    {
+        font-size: 14px;
+    }
+}

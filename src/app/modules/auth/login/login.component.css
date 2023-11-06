@@ -1,0 +1,57 @@
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-bg {
+  background-image: url(src/assets/Images/login_bg.png);
+  padding: 5% 5% 5% 5%;
+}
+
+.form-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  padding: 9px 17px;
+  background: #FFBD11;
+  box-shadow: 0px 20px 23px -7px rgba(200, 160, 0, 0.38);
+  border-radius: 6px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.social-apps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-apps button {
+  background: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 9px 17px;
+  width: 100%;
+  margin: 1%;
+}
+
+.small-text {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 1);
+}
+
+.btn-close {
+  outline: none;
+  box-shadow: none;
+}
+
+.sign-up-text {
+  color: #0875FF !important;
+  cursor: pointer;
+}

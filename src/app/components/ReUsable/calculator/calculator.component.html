@@ -1,0 +1,34 @@
+<!-- CALCULATOR -->
+<div class="calculator-title">
+    <span>CALCULATOR</span>
+    <br>
+    <p>for monthly expenses</p>
+</div>
+
+<div class="container" style="padding-top: 10%;">
+    <div class="row">
+        <div class="col-md-7 choose-academy">
+            <p>Choose Academy</p>
+            <div>
+                <span [ngClass]="currentAcademy === academy.name ? 'active' : ' ' "
+                    *ngFor="let academy of arrayOfAccademy" (click)="calcAcademy(academy)">
+                    {{academy.name}} {{academy.price}}</span>
+            </div>
+        </div>
+        <div class="col-md-5 choose-installments">
+            <p>Choose installments: </p>
+            <div>
+                <span *ngFor="let installments of arrayOfInstallments"
+                    [ngClass]="currentInstallments === installments.month ? 'active' : ' ' "
+                    (click)="calcInstallment(installments)">
+                    {{installments.month}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="price-calculator">
+    <p> <span>Monthly expenses:</span> <br> {{currentMonthPrice | number:'1.2-2'}} €</p>
+</div>
+
+<!-- CALCULATOR -->

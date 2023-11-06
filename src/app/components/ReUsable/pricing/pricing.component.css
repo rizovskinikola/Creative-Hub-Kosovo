@@ -1,0 +1,120 @@
+h2 {
+    text-transform: uppercase;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 120%;
+    margin-bottom: 5%;
+}
+.academy-card {
+    margin: 1%;
+    /* width: 30%; */
+}
+.fast-track 
+{
+    width: 33%;
+}
+.academy-benefits {
+    box-shadow: 0px 39px 54px rgba(107, 90, 0, 0.24);
+    border-radius: 24px;
+}
+.academy-title-wrapper {
+    padding: 3px;
+    /* background: linear-gradient(232.45deg, #ff820f -17.71%, #ffc85c 133.24%); */
+    border-radius: 16px;
+    margin-top: -30px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.academy-title-wrapper h3 {
+    margin: 0;
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 16px 0px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 39px;
+    color: #0a0a0a;
+}
+.card-bottom-wrapper {
+    padding: 3px;
+    /* background: linear-gradient(232.45deg, #ff820f -17.71%, #ffc85c 133.24%); */
+    border-radius: 24px;
+}
+.card-bottom-inner {
+    border-radius: 24px;
+    padding: 10px;
+    background: #f8f8f8;
+}
+.card-bottom-inner h4 {
+    color: #242424;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 0;
+}
+.card-bottom-inner span {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+.academy-info {
+    padding: 30px;
+}
+.hours {
+    color: #003577;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+.eu-certified h3 {
+    color: white;
+}
+.eu-certified span {
+    position: absolute;
+    right: -10px;
+    bottom: -15px;
+    font-size: 10.566px;
+    line-height: 13px;
+    color: #ffffff;
+    background: #003577;
+    box-shadow: 0px 1.32075px 1.32075px rgba(0, 0, 0, 0.25);
+    border-radius: 5.28301px;
+    padding: 8px 13px;
+}
+@media only screen and (max-width: 991px) {
+    h2 {
+        font-size: 24px;
+    }
+    .academy-card {
+        margin: 10% 0%;
+        width: 100%;
+    }
+    .academy-title-wrapper h3 {
+        font-size: 20px;
+    }
+    .card-bottom-inner h4 {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .card-bottom-inner span {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+    }
+    .hours {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    h5 
+    {
+        font-size: 12px;
+        font-weight: 900;
+    }
+}

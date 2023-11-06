@@ -1,0 +1,56 @@
+.footer-wrapper {
+  padding-top: 24px;
+  background-image: url("src/assets/Images/footer/footer_bg.png"), linear-gradient(93.94deg, #FFFFFF 0%, #F0F0F0 114.99%);
+  box-shadow: 0 -15px 57px rgba(0, 0, 0, 0.07);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin-top: 5%;
+}
+
+.footer-hr {
+  background: linear-gradient(90deg, rgba(236, 236, 236, 0) 8.9%, #626466 48.82%, rgba(236, 236, 236, 0) 91.31%);
+  width: 100%;
+  height: 1px;
+}
+
+.footer-logo-section {
+  width: min-content;
+}
+
+.footer-logo-section p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #606060;
+}
+
+.footer-menu-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0A0A0A;
+}
+
+.footer-menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #606060;
+}
+
+.footer-menu a > div:hover {
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+
+.credits-footer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #9B9B9B;
+}
+
+.active-footer-item > div {
+  color: #123D7E !important;
+  font-weight: 700 !important;
+}

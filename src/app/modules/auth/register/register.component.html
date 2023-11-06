@@ -1,0 +1,73 @@
+<div class="row m-0">
+  <div class="col-md-5 d-none d-lg-block p-0">
+    <img src="assets/Images/login_img.png" class="img-fluid h-100" alt="Login Image">
+  </div>
+
+  <div class="col-md-7 register-bg">
+    <div class="text-right">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h3 class="mb-3">SIGN UP TO CREATIVE HUB</h3>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="registerName" class="form-label">Name & surname</label>
+        <input type="text" id="registerName" formControlName="txtName" placeholder="e.g. Ricardo Pappa"
+               class="form-control" [ngClass]="{ 'is-invalid': submitted && getform.txtName.errors }"/>
+        <div *ngIf="submitted && (getform.txtName.errors || getform.txtName.touched)" class="text-danger">
+          <div *ngIf="getform.txtName.errors?.required">
+            First Name is required
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="registerEmail" class="form-label">E-mail address</label>
+        <input type="text" id="registerEmail" formControlName="txtEmail" placeholder="you@example.com"
+               class="form-control" [ngClass]="{ 'is-invalid': submitted && getform.txtEmail.errors }"/>
+        <div *ngIf="submitted && (getform.txtEmail.errors || getform.txtEmail.touched)" class="text-danger">
+          <div *ngIf="getform.txtEmail.errors?.required">Email is required</div>
+          <div *ngIf="getform.txtEmail.errors?.email">Email must be a valid email address</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="registerPhoneNumber" class="form-label">Phone number</label>
+        <input type="text" formControlName="txtMobile" id="registerPhoneNumber" class="form-control"
+               placeholder="e.g. +41 123 4567"
+               [ngClass]="{ 'is-invalid': submitted && getform.txtMobile.errors }"/>
+        <div *ngIf="submitted && (getform.txtMobile.errors || getform.txtMobile.touched)" class="text-danger">
+          <div *ngIf="getform.txtMobile.errors?.required">Mobile number is required</div>
+          <div *ngIf="getform.txtMobile.errors?.minlength">please enter 10 digit</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="registerPassword" class="form-label">Password</label>
+        <input type="password" id="registerPassword" formControlName="txtPassword" placeholder="********"
+               class="form-control" [ngClass]="{ 'is-invalid': submitted && getform.txtPassword.errors }"/>
+        <div *ngIf="submitted && (getform.txtPassword.errors || getform.txtPassword.touched)" class="text-danger">
+          <div *ngIf="getform.txtPassword.errors?.required">Password is required</div>
+          <div *ngIf="getform.txtPassword.errors?.minlength">Password must be at least 6 characters</div>
+        </div>
+      </div>
+      <label for="registerPassword1" class="form-label">Confirm password</label>
+      <input type="password" id="registerPassword1" formControlName="txtPassword" placeholder="********"
+             class="form-control" [ngClass]="{ 'is-invalid': submitted && getform.txtPassword.errors }"/>
+      <div *ngIf="submitted && (getform.txtPassword.errors || getform.txtPassword.touched)" class="text-danger">
+        <div *ngIf="getform.txtPassword.errors?.required">Password is required</div>
+        <div *ngIf="getform.txtPassword.errors?.minlength">Password must be at least 6 characters</div>
+      </div>
+
+      <div class="form-group mt-5">
+        <button class="submit-btn" type="submit">Register</button>&nbsp;
+      </div>
+    </form>
+    <p class="text-center small-text">By signing up, you agree with Creative Hub's
+      <a href="">Terms of Services</a> and <a href="">Privacy Policy</a></p>
+    <div class="social-apps">
+      <button><img src="assets/Images/fb.svg" class="responsive" alt=""></button>
+      <button><img src="assets/Images/google.svg" class="responsive" alt=""></button>
+    </div>
+    <div class="text-center small-text mt-3">
+      Already a Creative Hub member?
+      <a class="sign-in-text" (click)="openLoginModal()">Sign in</a>
+    </div>
+  </div>
+</div>

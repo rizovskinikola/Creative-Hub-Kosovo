@@ -1,0 +1,738 @@
+<!-- <div class="students-section">
+  <div class="row-students">
+    <app-student-card [studentText]="'I graduated Economics and I had problems finding a well-paid job. I wanted to change my career to a well-paid one and this is why I chose front-end but I didn’t know how to start. The Creative Hub Front-end Academy really empowered me and even on the first day I wrote my first code.'"></app-student-card>
+
+  </div>
+</div> -->
+<!-- <div class="form-top" id="formTop">
+  <div class="container">
+    <p class="m-0 d-block d-lg-none">
+      Kap ofertën SUPER EARLY BIRD dhe përfito 300 EURO Zbritje!
+    </p>
+    <div class="_button-wrapper _full_width">
+      <button class="submit-top-btn" id="showHideFormBtn">
+        Merr Ofertën
+      </button>
+    </div>
+    <div class="show-hide" id="mobileForm">
+      <form method="POST" action="https://akoskarova.activehosted.com/proc.php"
+        id="_form_189_" class="_form _form_189 _inline-form _dark" novalidate>
+        <input type="hidden" name="u" value="189" />
+        <input type="hidden" name="f" value="189" />
+        <input type="hidden" name="s" />
+        <input type="hidden" name="c" value="0" />
+        <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+        <input type="hidden" name="v" value="2" />
+        <input type="hidden" name="or" value="549d4b5fbbc466266174d67c41627ed7"/>
+        <div class="_form-content early-bird-form">
+          <div class="_form_element _x00427851 _full_width _clear">
+            <div class="_html-code">
+              <p class="m-0 d-none d-lg-block">
+                Kap ofertën SUPER EARLY BIRD dhe përfito 300 EURO Zbritje!
+              </p>
+            </div>
+          </div>
+          <div class="_form_element _x16427735 _full_width ">
+            <div class="_field-wrapper">
+              <input class="form-control" type="text" id="fullname"
+                name="fullname" placeholder="Emri" required/>
+            </div>
+          </div>
+          <div class="_form_element _x93238613 _full_width ">
+            <div class="_field-wrapper">
+              <input class="form-control" type="text" id="email" name="email"
+                placeholder="Email Adresa" required/>
+            </div>
+          </div>
+          <div class="_form_element _x15800839 _full_width ">
+            <div class="_field-wrapper">
+              <input class="form-control" type="text" id="phone" name="phone"
+                placeholder="Numri i Telefonit" required/>
+            </div>
+          </div>
+          <div class="_button-wrapper _full_width">
+            <button id="_form_189_submit" class="_submit submit-btn-top"
+              type="submit">
+              Apliko tani
+            </button>
+          </div>
+          <div class="_clear-element">
+          </div>
+        </div>
+        <div class="_form-thank-you" style="display:none;">
+        </div>
+      </form>
+    </div>
+  </div>
+  <img src="assets/Images/x.svg" class="close-top-form" id="closeForm" alt="">
+</div> -->
+<app-navbar></app-navbar>
+<!-- <app-pop-up-code-camp></app-pop-up-code-camp> -->
+
+<!-- <div id="myModal" class="hide" #myModal>
+
+  Modal content
+  <div class="modal-contentt">
+      <div class="modal-content-inner">
+
+          <form method="POST" action="https://akoskarova.activehosted.com/proc.php" id="_form_380_" class="_form _form_380 _inline-form  _dark" novalidate>
+            <input type="hidden" name="u" value="380" />
+            <input type="hidden" name="f" value="380" />
+            <input type="hidden" name="s" />
+            <input type="hidden" name="c" value="0" />
+            <input type="hidden" name="m" value="0" />
+            <input type="hidden" name="act" value="sub" />
+            <input type="hidden" name="v" value="2" />
+            <input type="hidden" name="or" value="87531ae39961580323a840f2226ae4e9" />
+            <div class="_form-content">
+              <div class="_form_element _x11509507 _full_width _clear" style="text-align: center;">
+                <img class="_form-image responsive" src="../../../assets/front-end/free-course-march.jpeg" />
+                </div>
+                <div class="_form_element _x85366375 _full_width _clear" >
+                  <div class="_form-title">
+                    <p class="fw-bold">Kurs Online FALAS: Intro. To Front-end!</p>
+                  </div>
+                </div>
+                <div class="_form_element _x29650663 _full_width " >
+                  <label for="fullname" class="_form-label pop-up-label">
+                    Emri i plotë
+                  </label>
+                  <div class="_field-wrapper">
+                    <input type="text" class="pop-up-input" id="fullname" name="fullname" placeholder="Shkruaj emrin" required/>
+                  </div>
+                </div>
+                <div class="_form_element _x76851212 _full_width " >
+                  <label for="email" class="_form-label pop-up-label">
+                    Email
+                  </label>
+                  <div class="_field-wrapper">
+                    <input type="text" class="pop-up-input" id="email" name="email" placeholder="Shkruaj email-in" required/>
+                  </div>
+                </div>
+                <div class="_button-wrapper _full_width">
+                  <button id="_form_380_submit" class="_submit submit-pop-up-btn" type="submit">
+                    Regjistrohu
+                  </button>
+                </div>
+                <div class="_clear-element">
+                </div>
+              </div>
+              <div class="_form-thank-you" style="display:none;">
+              </div>
+            </form>
+     
+
+          <img src="../../../assets/Images/ReUsable/x-btn.svg" id="closeBtn"
+          (click)="closeModal()"   alt="">
+      </div>
+  </div>
+</div> -->
+
+
+
+<div class="header">
+  <div class="container">
+    <h1>FRONT-END <br>
+      ACADEMY {{FR}}</h1>
+    <p class="header-p">Top paid and high in demand career for beginners.</p>
+      <div class="d-flex  flex-column-reverse d-lg-block">
+        <button class="apply-now-btn" (click)="goDown1()">Apply now</button>
+        <div class="d-flex flex-column-reverse flex-lg-column">
+          <div class="d-flex header-cards-mobile my-5">
+            <div class="d-block d-lg-flex">
+              <app-header-cards [borderGradient]="borderGradient" [innerBg]="innerBg" [headerCardImage]="'assets/front-end/beginner-friendly.svg'" [headerCardText]="'Beginner <br> friendly'"></app-header-cards>
+              <app-header-cards [borderGradient]="borderGradient" [innerBg]="innerBg" [headerCardImage]="'assets/front-end/job-guarantee.svg'"[headerCardText]="'Guaranteed Job <br>/ Internship'"></app-header-cards>
+            </div>
+            <div class="d-block d-lg-flex">
+              <app-header-cards [borderGradient]="borderGradient" [innerBg]="innerBg" [headerCardImage]="'assets/front-end/lamp.svg'"[headerCardText]="'Practical <br> work'"></app-header-cards>
+              <app-header-cards [borderGradient]="borderGradient" [innerBg]="innerBg" [headerCardImage]="'assets/front-end/ects.png'"[headerCardText]="'5 ECTS <br> Credits'"></app-header-cards>
+            </div>
+      
+          </div>
+          <p class="font-weight-bold">
+            Career possibilities: <br>
+            Web developer | Junior Programmer I Front-end Developer
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<app-career-cards [careerBg]="careerBg" [careerText]="careerText" [thickColor]="thickColor" [careerTopBg]="careerTopBg" [ulColor]="ulColor"></app-career-cards>
+
+<div class="container section-m">
+  <h2 class="text-center title-m">WHY CHOOSE A CAREER IN FRONT-END?</h2>
+  <div class="d-none d-lg-block">
+    <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="100"
+      class="text-right">
+      <img src="assets/front-end/fade1.png" class="fade-desktop" alt="What you
+        get in creativehub">
+      <img src="assets/front-end/fade1-mobile.png" class="fade-mobile" alt="What
+        you get in creativehub">
+    </div>
+    <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
+      <img src="assets/front-end/fade2.png" class="fade-desktop" alt="What you
+        get in creativehub">
+      <img src="assets/front-end/fade2-mobile.png" class="fade-mobile" alt="What
+        you get in creativehub">
+    </div>
+    <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="800"
+      class="text-right">
+      <img src="assets/front-end/fade3.png" class="fade-desktop" alt="What you
+        get in creativehub">
+      <img src="assets/front-end/fade3-mobile.png" class="fade-mobile" alt="What
+        you get in creativehub">
+    </div>
+    <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="1200">
+      <img src="assets/front-end/fade4.png" class="fade-desktop" alt="What you
+        get in creativehub">
+      <img src="assets/front-end/fade4-mobile.png" class="fade-mobile" alt="What
+        you get in creativehub">
+    </div>
+    <div data-aos="fade-right" data-aos-duration="600" data-aos-delay="1600"
+      class="text-right">
+      <img src="assets/front-end/fade5.png" class="fade-desktop" alt="What you
+        get in creativehub">
+      <img src="assets/front-end/fade5-mobile.png" class="fade-mobile" alt="What
+        you get in creativehub">
+    </div>
+    <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="2000">
+      <img src="assets/front-end/fade6.png" class="fade-desktop" alt="What you
+        get in creativehub">
+      <img src="assets/front-end/fade6-mobile.png" class="fade-mobile" alt="What
+        you get in creativehub">
+    </div>
+  </div>
+  <div class="d-lg-none d-block text-center">
+    <img src="assets/front-end/lamb-mobile.png" class="responsive"
+      alt="CreativeHub lamb">
+  </div>
+</div> <!-- Container end -->
+  <!-- Salaries -->
+  <div class="container section-m">
+    <h3 class="text-center title-m">SALARIES OF DEVELOPERS</h3>
+    <p class="text-center">Perfect career for people who want to work “remote” forever.</p>
+    <div class="d-flex">
+      <div class="salaries-grid ">
+          <div class="salaries-title">
+            <h4>Level</h4>
+          </div>
+        <p class="level">Junior [entry level]
+          developer</p>
+          <p class="level">Experienced  <br>
+            (3-5 years)</p> 
+            <p class="level">Senior <br>
+              (5+ years)</p>
+      </div>
+      <div class="salaries-grid ">
+        <div class="salaries-title">
+          <h4 class="text-center"><span class="d-none d-lg-block">Kosovo</span> <span class="d-block d-lg-none">Monthly salary
+            range (EUR)</span></h4>
+        </div>
+      <p class="salary">250€ - 550€</p>
+        <p class="salary">550€ - 2700€</p> 
+          <p class="salary">+2700€ </p>
+    </div>
+
+    <div class="salaries-grid d-none d-lg-block">
+      <div class="salaries-title">
+        <h4 class="text-center">US</h4>
+      </div>
+    <p class="salary">$4833 -$ 6500</p>
+      <p class="salary">$7000-$7580</p> 
+        <p class="salary">$9500 - $14900</p>
+
+  </div>
+
+  <div class="salaries-grid d-none d-lg-block">
+    <div class="salaries-title">
+      <h4 class="text-center">Europe</h4>
+    </div>
+  <p class="salary">2600€ - 5250€</p>
+    <p class="salary">4290€ - 7600€</p> 
+      <p class="salary">5250€- 10580€</p>
+
+</div>
+
+    </div>
+  </div>
+<!-- Salaries -->
+<app-steps-to-success [firstStepText]="firstStepText" [secondStepText]="secondStepText" [thirdStepText]="thirdStepText"></app-steps-to-success>
+<div class="section-m">
+  <div class="container">
+    <h2>Student Feedback</h2>
+    </div>
+    <div class="students-section">
+      <div class="first-row-students">
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“I graduated Economics and I had problems finding a well-paid job. I wanted to change my career to a well-paid one and this is why I chose front-end but I didn’t know how to start. The Creative Hub Front-end Academy really empowered me and even on the first day I wrote my first code.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student30.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Shqipdona Krasniqi</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“Even though we didn’t finish the Front-end Academy yet, we got a company offer to start working remotely as developer for Autom8, a company based in Australia.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student13.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Syart Ibrahimi</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“I have already taken some previous courses to learn IT, but nothing as the professionally developed Front-end Academy program. I even brought 2 more friends to join the Academy.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student33.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Dardan Rreci</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“I’m a student in Computer Science and Engineering but I wanted to learn more about Front-End and to practice it better. I saw Creative Hub’s Front-End program and I liked the opportunities it gives to us so that’s why I enrolled.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student16.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Engjell Mustafa</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“In Creative Hub we learn by the “Learn by doing” method. We immediately started to work on HTML5 & CSS3 projects.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student21.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Elsa Rrustemi              </h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“I’m a 3D artist. I always wanted to get a job that I can do from home, and Front-End as a career gives me this opportunity.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student23.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Denis Deliu</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“I have 9 years of experience as a Sales Manager. I wanted to grow
+              more in my career, so I decided to start to learn Front-End
+              Development.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student7.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Fidan Halilaj</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“When I first started the academy I had 0 previous knowledge in programming. Thanks to Creative Hub’s lecturers now I have professional skills in the field of Front-End.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student17.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Oktaj Dauti</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“Creative Hub’s team and lecturers are very patient and understanding for students who have no previous knowledge of Front-End.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student40.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Jakup Merovci</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“I’m 16 years old. I wanted to start a career on Front-End and get hired in a short period of time.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student36.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Lorik Krasniqi</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“The future is Front-End Development.”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student39.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Lorik Krasniqi</h6>
+                <p class="academy-name">Front End Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="student-card">
+          <div class="student-card-inner">
+            <p>“Even though I had a background in HR. I enrolled in this academy to expand my knowledge and learn through real-based projects and experienced mentors. I can honestly say that Creative Hub is the best choice to help you boost your career in HR. ”</p>
+            <div class="d-flex align-items-start">
+              <img src="assets/home/student12.png" alt="Creative Hub Student">
+              <div class="ml-3">
+                <h6>Debora Meta</h6>
+                <p class="academy-name">HR Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<div class="container section-m">
+<h2 class="title-m">THE BEST PROGRAM TO GUIDE YOU TO YOUR NEXT CAREER</h2>
+<div class="program-bg">
+
+    <div class="html-card program-card" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+      data-aos-delay="700">
+      <div class="card-one-title">HTML 5</div>
+      <div class="card-one-content">
+        <img src="assets/front-end/html5.svg" alt="HTML5 Logo">
+
+        <p>In the initial part of the Front-End Academy you will learn the
+          basics of programming - HTML. You
+          will
+          start with the basics, you will continue towards advanced learning of
+          this language. You will
+          complete
+          this segment with a task and a project.</p>
+      </div>
+    </div>
+
+    <div class="css-card program-card" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="800"
+      data-aos-delay="1100">
+      <div class="card-two-title">CSS 3</div>
+      <div class="card-two-content">
+        <img src="assets/front-end/css.svg" alt="CSS Logo">
+
+        <p>In the initial part of the Front-End Academy you will learn the
+          basics of programming - HTML. You
+          will
+          start with the basics, you will continue towards advanced learning of
+          this language. You will
+          complete
+          this segment with a task and a project.</p>
+      </div>
+    </div>
+
+    <div class="js-card program-card" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="900"
+      data-aos-delay="1200">
+      <div class="card-one-title">JAVASCRIPT</div>
+      <div class="card-one-content">
+        <img src="assets/front-end/js.svg" alt="Javascript Logo">
+
+        <p>The third pillar of technology on the World Wide Web is JavaScript, a
+          highly functional, dynamic, and
+          event-driven programming language. These features are just a few of
+          the reasons why there is a great
+          demand for developers with JavaScript skills.</p>
+      </div>
+    </div>
+
+    <div class="react-card program-card" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+      data-aos-delay="1300">
+      <div class="card-two-title">REACT</div>
+      <div class="card-two-content">
+        <img src="assets/front-end/react.svg" alt="REACT Logo">
+
+        <p>The next module is the basic and advanced study of the React,
+          open-source JavaScript library,
+          designed to build a user interface. One of the reasons why there is a
+          need for this library is the
+          fact that through React you create web pages and mobile applications.</p>
+      </div>
+    </div>
+
+    <div class="redux-card program-card" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="1100"
+      data-aos-delay="1400">
+      <div class="card-one-title">REACT + REDUX</div>
+      <div class="card-one-content">
+        <img src="assets/front-end/redu.svg" alt="REDUX AND REACT Logo">
+
+        <p>Key part of completing Front-End Academy is the Redux - an
+          open-source JavaScript library, designed
+          to manage application status. Upon completion of this module, you’ll
+          be able to create web page in a
+          form of a blog.</p>
+      </div>
+    </div>
+
+    <div class="final-project program-card" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="1200"
+      data-aos-delay="1500">
+      <div class="card-two-title">FINAL PROJECT</div>
+      <div class="card-two-content">
+        <img src="assets/front-end/ch.svg" alt="CreativeHub Logo">
+
+        <p>The last module of the Front-End Academy will be focused on the final
+          project - creating a React
+          application.</p>
+      </div>
+    </div>
+  </div>
+  </div> <!-- Container end -->
+
+<!-- Students projects -->
+<div class="container section-m">
+  <h2 class="text-center title-m">
+    STUDENTS PROJECTS
+  </h2>
+  <div class="project-card">
+    <img src="assets/front-end/space-drive.png" alt="Space Drive">
+    <div class="project-info-wrapper">
+      <div class="project-info">
+        <h5>SpaceDrive</h5>
+        <p>Studentja jonë në Akademinë për Front- End, Fortesa Grudi, në projektin e saj të quajtur Space Drive, duke u bazuar në vetëm një foto-dizajn të vetëm filloi punën me HTML, duke hapur kështu një boilerplate, në të cilin pastaj vendosi fontawesome dhe pjesën e nevojshme për përdorim të javascript-it.</p>
+<a href="https://blog.creativehubkos.com/akademia-front-end" target="_blank"><button>See more</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="assets/front-end/landing-page.png" alt="Space Drive">
+    <div class="project-info-wrapper">
+      <div class="project-info">
+        <h5>Landing page for a mobile app</h5>
+        <p>Studentët tanë nga Akademia për Front End deri më tani kanë mësuar të punojnë në HTML, CSS, JavaScript, Bootstrap dhe JQuery. Me ndihmën e ligjëruesit Fitim Krasniqi, gjithqka që është mësuar është kaluar në të njëjtën kohë dhe në praktikë.</p>
+<a href="https://blog.creativehubkos.com/puna-n%C3%AB%20projekte-e-student%C3%ABve-t%C3%AB-akademis%C3%AB-p%C3%ABr-front-end#" target="_blank"><button>See more</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Mentors -->
+<div class="container section-m">
+  <div class="row">
+
+    <h2 class="mentors-title text-center title-m">MEET THE MENTORS</h2>
+    <div class="col-md-6 mentor-mobile">
+      <div>
+        <img src="assets/front-end/mentor1.png" class="responsive"
+          alt="CreativeHub Mentor">
+      </div>
+      <p class="mentor-card"><span style="color:#A967C8"> {{LN}} </span> Detjana Kastrati  <br> <span
+          style="color: #068BE9;"> {{break}} </span> <br> <span style="color:
+          #00FFE0;"> {{SB}} </span> Front End Team Lead at Frakton & HTML, CSS, BOOTSTRAP Lecturer.
+8 years of experience as web developer skilled in ReactJS, AngularJS, PHP, WordPress, Databases, Search Engine Optimization (SEO), Javascript.
+
+      </p>
+    </div>
+
+    <div class="col-md-6 mentor-mobile">
+      <div>
+        <img src="assets/front-end/mentor2.png" class="responsive"
+          alt="CreativeHub Mentor">
+      </div>
+      <p class="mentor-card"><span style="color:#A967C8"> {{LN}} </span> Gentrit
+        Duraku <br> <span
+          style="color: #068BE9;"> {{break}} </span> <br> <span style="color:
+          #00FFE0;"> {{SB}} </span>Head of Web
+        department in Frakton.
+        7+ years of experience in Software development, in particular Web
+        development technologies, constantly
+        following the latest stack like React, Angular, Vue, Three, etc.
+      </p>
+    </div>
+
+  </div><!-- Row end -->
+</div><!-- Container end -->
+
+<div class="container position-relative certificates">
+  <h2 class="certificates-title">THE DIPLOMA</h2>
+  <div class="certificates-box-wrapper">
+    <div class="certificates-box-inner">
+      <p>
+        You will receive a EU recognized Diploma Supplement with ECTS credits. Attach this diploma to your CV when you are applying for work.
+ 
+
+
+
+      </p>
+      <img class="certificates-img d-none d-lg-block" src="assets/front-end/laptop_img.png" data-aos="flip-up" data-aos-delay="800"
+      data-aos-duration="800" data-aos-easing="linear">
+    </div>
+  </div>
+</div>
+
+<div class="text-center section-m">
+  <button class="apply-now-btn" (click)="goDown1()">Apply now</button>
+</div>
+<app-hiring-partners></app-hiring-partners>
+<app-why-creative-table></app-why-creative-table>
+
+<div class="container section-m call-dardania">
+  <h3>Ask your company to sponsor your training!</h3>
+  <div class="company-wrapper-text">
+    <p>30% of our students have their tuition paid by the companies. If you are employed currently you can ask your company to sponsor you the training. Explain your company the value that you will be for them after completing the Academy and the websites that you can build and design instead for them to be paying for this someone else. 
+    </p>
+    <h4 class="font-weight-bold">Our coordinator Daradania can help with this. </h4>
+  </div>
+  <div class="d-flex align-items-center mt-3">
+    <h4 class="font-weight-bold m-0">Reach out today:</h4>
+    <div class="d-flex ms-3 align-items-center">
+      <img src="assets/front-end/call.svg" alt="">
+      <a href="tel:+ 383 49 334 437" class="telephone ms-3">+ 383 49 334 437</a>
+    </div>
+  </div>
+  <img src="assets/front-end/saly.png" class="saly d-none d-lg-block" alt="Saly">
+</div>
+
+
+<!-- <app-wheel-digital></app-wheel-digital> -->
+
+
+<!-- <app-meetandgreet></app-meetandgreet> -->
+<!-- <app-form [title]="'FRONT END ACADEMY'"></app-form> -->
+<div id="cards">
+  <app-pricing [justAcademyInfo]="justAcademyInfo" [arrayPricing]="arrayPricing" [euCertifiedInfo]="euCertifiedInfo"
+ [mainBorderColor]="mainBorderColor" [euCertifiedBg]="euCertifiedBg" [showFastTrack]="'none'"></app-pricing>
+</div>
+ <app-calculator></app-calculator>
+ <app-calendly></app-calendly>
+ <app-wheel-front-end></app-wheel-front-end> 
+ <app-environmental></app-environmental>
+ 
+<!-- REGISTER FORM -->
+
+ <div class="register-form" id="form">
+  <h2>Ready to Enroll Now?</h2>
+  <div class="register-form-wrapper">
+    <h3>FRONT END ACADEMY <span>Application form</span></h3>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/intl-tel-input@17.0.18/build/css/intlTelInput.min.css"/>
+    <form method="POST" action="https://akoskarova.activehosted.com/proc.php" id="_form_259_" class="_form _form_259 _inline-form  _dark" novalidate>
+      <input type="hidden" name="u" value="259" />
+      <input type="hidden" name="f" value="259" />
+      <input type="hidden" name="s" />
+      <input type="hidden" name="c" value="0" />
+      <input type="hidden" name="m" value="0" />
+      <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+      <input type="hidden" name="or" value="be741591aced160ea9b05dabbbe63dda" />
+      <div class="_form-content">
+        <div class="row mb-5 mb-lg-0">
+          <div class="col-md-6 mt-1 mt-lg-3">        <div class="_form_element _x72004668 _full_width " >
+            <label for="firstname" class="_form-label">
+              Name and surname*
+            </label>
+            <div class="_field-wrapper">
+              <input type="text" id="firstname" name="firstname" placeholder="Shkruani emrin" required/>
+            </div>
+          </div></div>
+          <div class="col-md-6 mt-1 mt-lg-3">        <div class="_form_element _x10372521 _full_width " >
+            <label for="lastname" class="_form-label">
+              Phone number*
+            </label>
+            <div class="_field-wrapper">
+              <input type="text" id="lastname" name="lastname" placeholder="Shkruani mbiemrin" required/>
+            </div>
+          </div></div>
+          <div class="col-md-6 mt-1 mt-lg-3">
+            <div class="_form_element _x43061925 _full_width " >
+              <label for="email" class="_form-label">
+                E-mail*
+              </label>
+              <div class="_field-wrapper">
+                <input type="text" id="email" name="email" placeholder="Shkruani email-in" required/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-1 mt-lg-3">
+
+            <div class="_form_element _x71095374 _full_width " >
+              <label for="field[14]" class="_form-label">
+                Choose academy
+              </label>
+              <div class="_field-wrapper">
+                <select name="field[14]" id="field[14]" required>
+                  <option selected>
+                  </option>
+                  <option value="Only Academy" >
+                    Only Academy
+                  </option>
+                  <option value="EU certified" >
+                    EU certified
+                  </option>
+                  <option value="Option 3" >
+                    <!-- Option 3 -->
+                  </option>
+                </select>
+              </div>
+            </div></div>
+        </div>
+
+        <div class="_button-wrapper _full_width">
+          <button id="_form_259_submit" class="_submit" type="submit">
+            Apply now
+          </button>
+        </div>
+        <div class="_clear-element">
+        </div>
+      </div>
+      <div class="_form-thank-you" style="display:none;">
+      </div>
+    </form>
+ 
+  </div>
+ </div>
+ <div class="terms">
+  By clicking on “Submit” I agree and give approval to Kreative Hub LLC to use and process my personal data, later store it as long as necessary for the purpose for which the data was collected, after which they will be deleted in accordance with the Law on Personal Data Protection. I reserve the right at any time to withdraw my consent.
+
+*Required field. 
+</div>
+ <!-- PODCAST -->
+ <div class="container section-m">
+    <div>
+      <h2 class="title-m">LISTEN TO OUR PODCAST</h2>
+      <div class="podcast">
+          <img src="assets/front-end/ch-logo.svg" alt="CH Logo">
+          <a href="https://www.podbean.com/ew/pb-xnfad-11e1afb" target="_blank"><img src="assets/front-end/podcast.png" alt="Podcast"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<app-featured-in></app-featured-in>
+<app-footer></app-footer>
+
+

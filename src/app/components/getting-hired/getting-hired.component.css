@@ -1,0 +1,190 @@
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+h2 {
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 120%;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 120%;
+}
+h4 {
+    font-size: 24px;
+    line-height: 120%;
+}
+p {
+    font-size: 18px;
+    line-height: 120%;
+}
+.header {
+    background: url(../../../assets/hired/header-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 90vh;
+}
+.header h1 {
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 120%;
+    padding-top: 15%;
+}
+/* .feedback 
+{
+    padding: 0% 5%;
+} */
+.feedback-card {
+    padding: 32px 28px;
+    background: #f8f8f8;
+    box-shadow: 0px 35px 26px -25px rgba(107, 90, 0, 0.28);
+    border-radius: 32px;
+    margin: 10% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 750px;
+}
+
+.projects-title {
+    padding: 2% 0%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.feedback {
+    margin-top: -10%;
+}
+.feedback-card h4 {
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    background: #0a0a0a;
+    border-radius: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px 12px 12px;
+}
+.feedback-card div {
+    color: #0a0a0a;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
+.hiring-wrapper {
+    padding: 2px;
+    background: linear-gradient(180deg, #00ffe0 0%, #00d1ff 47.92%, #fa00ff 100%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: 0;
+    margin-right: -2px;
+}
+.hiring-inner {
+    padding: 3%;
+    text-align: right;
+    background: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.hiring-wrapper button {
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 27.6779px;
+    background: #f8f8f8;
+    box-shadow: 0px 35px 26px -25px rgba(107, 90, 0, 0.28);
+    border-radius: 100px 100px 32px 32px;
+    margin: 10% 2%;
+    height: 500px;
+}
+.project-card h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    background: #0a0a0a;
+    border-radius: 71px;
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.numbers-wrapper {
+    background: linear-gradient(180deg, #00ffe0 0%, #00d1ff 47.92%, #fa00ff 100%);
+    padding: 3px;
+    border-radius: 30px;
+}
+
+.numbers-inner {
+    padding: 3%;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.number h3 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #f8f8f8;
+    background: linear-gradient(232.45deg, #dc49a1 -17.71%, #bf3e98 4.65%, #ad3893 17.92%, #150166 133.24%);
+    border-radius: 18px;
+    padding: 16px 32px;
+}
+.number h4 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #9b9b9b;
+}
+
+@media only screen and (max-width: 991px) {
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .header h1 {
+        font-size: 24px;
+        padding-top: 10%;
+    }
+    .header {
+        background: url(../../../assets/hired/header-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 400px;
+    }
+    .feedback {
+        margin-top: -20%;
+    }
+}

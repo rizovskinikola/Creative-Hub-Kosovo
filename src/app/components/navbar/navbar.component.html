@@ -1,0 +1,298 @@
+<header class="header-navbar d-none d-lg-block">
+  <div class="container pt-3">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center telephone-box">
+        <img src="assets/Images/calling_icon.png">
+        <a href="tel:+38349334437">
+          <p class="ml-2">+ 383 49 334 437</p>
+        </a>
+      </div>
+      <div class="d-flex align-items-center">
+        <ul class="my-0 p-0 campus-ul me-14px">
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" id="campusDropdown"
+              role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Campuses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="campusDropdown">
+              <a class="dropdown-item" href="https://creativehub.mk/">Macedonia</a>
+              <a class="dropdown-item" href="#">Kosovo</a>
+              <!--              <a class="dropdown-item" href="#">Miami</a>-->
+              <!--              <a class="dropdown-item" href="#">Berlin</a>-->
+            </div>
+          </li>
+        </ul>
+
+        <hr class="navbar-vertical-hr me-14px">
+
+        <!-- <button class="btn login-btn me-14px" (click)="openLoginModal()">Login</button>
+        <button class="btn register-btn" (click)="openRegisterModal()">Register</button> -->
+      </div>
+    </div>
+    <hr class="navbar-hr">
+    <div class="pb-3">
+      <nav class="navbar navbar-expand-lg p-0">
+        <a class="nav-brand" (click)="goHome()"><img
+            src="assets/Images/logo_black.png" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <img src="assets/Images/hamburger_icon.png"
+            class="navbar-toggler-icon" />
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#"
+                id="academiesDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Academies
+              </a>
+              <div class="dropdown-menu" aria-labelledby="academiesDropdown">
+                <a class="dropdown-item" href="https://creativehubkos.com/digital-marketing">
+                  Digital marketing
+                </a>
+                <!-- <a class="dropdown-item" routerLink="/graphic-design"
+                  routerLinkActive="active-menu-item"
+                  [routerLinkActiveOptions]="{exact:true}">
+                  Graphic design
+                </a> -->
+                <a class="dropdown-item"  href="https://creativehubkos.com/hr">
+                  Human resources
+                </a>
+                <a class="dropdown-item" href="https://creativehubkos.com/front-end">
+                  Front-End
+                </a>
+                <a class="dropdown-item" href="https://creativehubkos.com/back-end">
+                  Back-End
+                </a>
+                <a class="dropdown-item"  href="https://creativehubkos.com/data-science">
+                  Data Science
+                </a>
+                <a class="dropdown-item"  href="https://creativehubkos.com/women-leadership-academy/">
+                  Women's Leadership
+                </a>
+                <a class="dropdown-item"  href="https://creativehubkos.com/software-testing/">
+                  Software Testing
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="careersDropdown"
+                role="button"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Career
+              </a>
+              <div class="dropdown-menu" aria-labelledby="careersDropdown">
+                <a class="dropdown-item"
+                  href="https://blog.creativehubkos.com/">
+                  Our students
+                </a>
+                <a class="dropdown-item"
+                  href="http://hiring.creativehubkos.com/">
+                  Hiring platform
+                </a>
+                <!-- <a class="dropdown-item" href="<?php echo SITE_URL; ?>hakatoni">
+                  Hackathons
+                </a> -->
+                <!-- <a class="dropdown-item" href="<?php echo SITE_URL; ?>ux-ui-quests">
+                  UX/UI Quests
+                </a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<header class="header-mobile-navbar d-lg-none">
+  <div #mainMobileMenu class="overlay">
+    <div class="menu-overlay-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img src="assets/Images/logo_black.png" />
+        <img (click)="closeNav()" class="close-menu-btn"
+          src="assets/Images/navbar/nav_close_icon.png" />
+      </div>
+    </div>
+    <div class="overlay-content container">
+      <div class="mobile-menu-item d-flex align-items-center
+        justify-content-between"
+        (click)="openMenuById('academiesMenu')">
+        Academies <img src="assets/Images/navbar/right_arrow_icon.png">
+      </div>
+      <hr class="navbar-hr">
+      <div class="mobile-menu-item d-flex align-items-center
+        justify-content-between"
+        (click)="openMenuById('careersMenu')">
+        Career <img src="assets/Images/navbar/right_arrow_icon.png">
+      </div>
+      <hr class="navbar-hr">
+      <div class="d-flex align-items-center telephone-box mb-4">
+        <img src="assets/Images/calling_icon.png">
+        <a href="tel:+38349334437">
+          <p class="ml-2">+ 383 49 334 437</p>
+        </a>  
+      </div>
+      <div class="mobile-menu-item d-flex align-items-center
+        justify-content-between"
+        (click)="openMenuById('campusMenu')">
+        <div>Campuses: <span class="campus-name">Kosovo</span></div>
+        <img src="assets/Images/navbar/right_arrow_icon.png">
+      </div>
+      <hr class="navbar-hr">
+      <!--      <div class="mobile-menu-item d-flex align-items-center justify-content-between" data-bs-toggle="modal"-->
+      <!--           href="#modalToggle" role="button">-->
+      <!--        <div>Login/Register</div>-->
+      <!--        <img src="assets/Images/navbar/right_arrow_icon.png">-->
+      <!--      </div>-->
+    </div>
+  </div>
+
+  <div id="academiesMenu">
+    <div class="menu-overlay-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img (click)="closeMenuById('academiesMenu')"
+          src="assets/Images/navbar/left_arrow_icon.png" />
+        <div class="active-blue-color">Academies</div>
+        <img (click)="closeNav()" class="close-menu-btn"
+          src="assets/Images/navbar/nav_close_icon.png" />
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column pt-4">
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/digital-marketing">
+        <div class="d-flex justify-content-between align-items-center">
+          Digital marketing
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <!-- <a class="mobile-submenu-item" routerLink="/graphic-design"
+        routerLinkActive="active-blue-color"
+        [routerLinkActiveOptions]="{exact:true}">
+        <div class="d-flex justify-content-between align-items-center">
+          Graphic design
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a> -->
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/hr">
+        <div class="d-flex justify-content-between align-items-center">
+          Human resources
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/front-end">
+        <div class="d-flex justify-content-between align-items-center">
+          Front-End
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/back-end">
+        <div class="d-flex justify-content-between align-items-center">
+         Back-End
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/data-science">
+        <div class="d-flex justify-content-between align-items-center">
+          Data Science
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/women-leadership-academy/">
+        <div class="d-flex justify-content-between align-items-center">
+          Women's Leadership
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item" href="https://creativehubkos.com/software-testing/">
+        <div class="d-flex justify-content-between align-items-center">
+          Software Testing
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="careersMenu">
+    <div class="menu-overlay-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img (click)="closeMenuById('careersMenu')"
+          src="assets/Images/navbar/left_arrow_icon.png" />
+        <div class="active-blue-color">Career</div>
+        <img (click)="closeNav()" class="close-menu-btn"
+          src="assets/Images/navbar/nav_close_icon.png" />
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column pt-4">
+      <a class="mobile-submenu-item" href="https://blog.creativehubkos.com/">
+        <div class="d-flex justify-content-between align-items-center">
+          Our students
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item" href="http://hiring.creativehubkos.com/">
+        <div class="d-flex justify-content-between align-items-center">
+          Hackathons
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div id="campusMenu">
+    <div class="menu-overlay-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <img (click)="closeMenuById('campusMenu')"
+          src="assets/Images/navbar/left_arrow_icon.png" />
+        <div class="active-blue-color">Campuses</div>
+        <img (click)="closeNav()" class="close-menu-btn"
+          src="assets/Images/navbar/nav_close_icon.png" />
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column pt-4">
+      <a class="mobile-submenu-item" href="https://creativehub.mk/">
+        <div class="d-flex justify-content-between align-items-center">
+          Macedonia
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <a class="mobile-submenu-item active-blue-color" href="#">
+        <div class="d-flex justify-content-between align-items-center">
+          Kosovo
+          <img src="assets/Images/navbar/right_arrow_icon.png">
+        </div>
+      </a>
+      <!--      <a class="mobile-submenu-item" href="<?php echo SITE_URL; ?>">-->
+      <!--        <div class="d-flex justify-content-between align-items-center">-->
+      <!--          Miami-->
+      <!--          <img src="assets/Images/navbar/right_arrow_icon.png">-->
+      <!--        </div>-->
+      <!--      </a>-->
+      <!--      <a class="mobile-submenu-item" href="<?php echo SITE_URL; ?>">-->
+      <!--        <div class="d-flex justify-content-between align-items-center">-->
+      <!--          Berlin-->
+      <!--          <img src="assets/Images/navbar/right_arrow_icon.png">-->
+      <!--        </div>-->
+      <!--      </a>-->
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-between mobile-navbar
+    align-items-center">
+    <a (click)="goHome()">
+      <img src="assets/Images/logo_mobile.png">
+    </a>
+    <img class="hamburger-icon" src="assets/Images/hamburger_icon.png"
+      (click)="openNav()">
+  </div>
+</header>

@@ -1,0 +1,25 @@
+<div class="cards" [style.background]="borderColor">
+  <div class="cards-inner">
+    <div class="card-title">
+      SYLLABUS
+    </div>
+    <div class="card-ul">
+      <div *ngFor="let program of programme; let i = index" class="d-flex align-items-center mb-3">
+        <div class="item-number align-self-start" [style.borderColor]="circleBorderColor">{{i + 1}}</div>
+        <div class="item-text" [innerHTML]="program"></div>
+      </div>
+    </div>
+
+    <div class="lecturer-card d-flex flex-column flex-lg-row" [style.background]="lecturer.background">
+      <div>
+        <img class="d-none d-lg-block" [src]="lecturer.image" alt="Creativehub Lecturer">
+        <img class="d-lg-none img-fluid mb-3" [src]="lecturer.imageMobile" alt="Creativehub Lecturer">
+      </div>
+      <div class="lecturer-card-text ms-3">
+        Lecturer: <b>{{lecturer.name}}</b>
+        <br><br>
+        {{lecturer.description}}
+      </div>
+    </div>
+  </div>
+</div>

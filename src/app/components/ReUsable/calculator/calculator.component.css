@@ -1,0 +1,163 @@
+.calculator-title p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.choose-academy p {
+    font-size: 16px;
+}
+.choose-installments p {
+    font-size: 16px;
+}
+.price-calculator {
+    padding-top: 15%;
+    margin-bottom: 18%;
+}
+.price-calculator p {
+    font-size: 24px;
+    width: 80%;
+}
+.price-calculator p span {
+    font-size: 16px;
+}
+
+.price-calculator p span {
+    color: #9b9b9b;
+    font-size: 24px;
+}
+.calculator-title {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+    border: 4px solid transparent;
+    border-radius: 32px;
+    background-clip: padding-box;
+    margin-bottom: 15px;
+}
+.calculator-title::after {
+    position: absolute;
+    top: 28px;
+    bottom: -10px;
+    left: -4px;
+    right: -4px;
+    background: linear-gradient(90deg, rgba(0, 255, 224, 1) 0%, rgba(0, 209, 255, 1) 35%, rgba(250, 0, 255, 1) 100%);
+    content: "";
+    z-index: -1;
+    border-radius: 32px;
+}
+.calculator-title span {
+    font-size: 43px;
+    background: #068be9;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    padding: 1%;
+}
+.calculator-title p {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2%;
+}
+.choose-academy p,
+.choose-installments p {
+    color: #9b9b9b;
+    font-size: 18px;
+    font-weight: 700;
+}
+.choose-academy div,
+.choose-installments div {
+    background: #068be9;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 700;
+}
+.choose-academy span,
+.choose-installments span {
+    color: white;
+    padding: 5px 10px;
+    /* border-radius: 10px; */
+}
+.choose-academy span:hover,
+.choose-installments span:hover {
+    cursor: pointer;
+}
+.active {
+    background-color: white;
+    color: #068be9 !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.price-calculator {
+    width: 100%;
+    height: 120px;
+    border-bottom: 4px solid #068be9;
+    padding-top: 5%;
+}
+.price-calculator p {
+    font-size: 42px;
+    background-color: white;
+    border-radius: 10px;
+    border: 4px solid #068be9;
+    color: black;
+    font-weight: 900;
+    width: 18%;
+    margin: auto;
+    padding: 0% 1%;
+}
+.price-calculator p span {
+    color: #9b9b9b;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 991px) {
+    .price span {
+        font-size: 24px;
+    }
+    .price {
+        font-size: 12px;
+    }
+    .calculator-title span {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .calculator-title p {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .calculator-title::after {
+        position: absolute;
+        top: 18px;
+        bottom: 0px;
+        left: -4px;
+        right: -4px;
+    }
+    .price-calculator p {
+        width: 80%;
+        font-size: 24px;
+    }
+    .price-calculator {
+        padding-top: 15%;
+        height: 107px;
+        text-align: center;
+    }
+    .choose-academy, .choose-installments{
+        text-align: center;
+    }
+    .choose-academy div
+    {
+        flex-direction: column;
+    }
+    .choose-academy span, .choose-installments span 
+    {
+        padding: 15px;
+    }
+    .choose-academy p, .choose-installments p 
+    {
+        margin-bottom: 0;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

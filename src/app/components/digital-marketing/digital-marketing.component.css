@@ -1,0 +1,923 @@
+.responsive {
+  max-width: 100% !important;
+  height: auto !important;
+}
+h2 {
+  font-weight: 900;
+  font-size: 43px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 120%;
+}
+h4 {
+  font-size: 24px;
+  line-height: 120%;
+}
+p {
+  font-size: 18px;
+  line-height: 120%;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header h1 {
+  font-weight: 900;
+  font-size: 43px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 5%;
+}
+.header-left,
+.header-right {
+  width: 50%;
+}
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.apply-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 56px;
+  width: 225px;
+  height: 48px;
+  background: #068be9;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+}
+/* header */
+
+/* free-video form */
+.over-career-p {
+  margin: 2% auto;
+  font-weight: 900 !important;
+  text-align: left;
+  width: 80%;
+}
+.career-form-wrapper {
+  background: linear-gradient(232.45deg, #ef5da8 -17.71%, #ff8800 133.24%);
+  box-shadow: 0px 35px 26px -25px rgba(107, 90, 0, 0.28);
+  border-radius: 32px;
+  color: white;
+  width: 80%;
+  margin: 0% auto 5% auto;
+  text-align: left;
+  padding: 3% 5%;
+}
+.career-form-wrapper h2 {
+  text-transform: uppercase;
+  font-weight: 900 !important;
+}
+.career-form {
+  display: flex;
+  justify-content: center;
+}
+.career-form input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 4px 4px 16px;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 12px;
+  font-family: Cabin;
+  border: 1px solid rgba(116, 179, 255, 1);
+}
+.career-form button {
+  background: #068be9;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+  padding: 12px 16px;
+  border: none;
+  transition: transform 0.3s;
+}
+.career-form button:hover {
+  transform: scale(0.95);
+}
+/* student cards */
+.students-section {
+  margin: 5% 0%;
+  overflow-x: hidden;
+}
+.student-card {
+  padding: 2px;
+  background: linear-gradient(180deg, #068be9 0%, #ffffff 76.88%);
+  border-radius: 12px;
+  margin: 0 10px;
+  width: 100%;
+}
+.student-card-inner {
+  background: #ffffff;
+  box-shadow: 0px 37px 42px -18px rgba(137, 137, 137, 0.23);
+  border-radius: 12px;
+  padding: 10% 5%;
+}
+.student-card-inner p {
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #000000;
+}
+.student-card-inner h6 {
+  color: #606060;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+}
+.student-card-inner .academy-name {
+  color: #606060;
+}
+.first-row-students {
+  animation: first-marquee-students 40s linear infinite;
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  width: 300%;
+}
+@keyframes first-marquee-students {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+
+/* student cards */
+
+/* cards what you will learn */
+.card-head {
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+  width: 50%;
+}
+.card-logo {
+  position: absolute;
+  right: 20px;
+  top: -50px;
+}
+
+.card-shadow {
+  background-color: #f8f8f8;
+  border: 3px solid white;
+  padding: 40px;
+  border-radius: 58px;
+  box-shadow: 0px 39px 54px rgba(107, 90, 0, 0.24);
+  margin: 10% 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  position: relative;
+}
+
+/* cards what you will learn */
+
+/* expert cards */
+.expert {
+  border: 2px solid #ff8800;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  position: relative;
+  z-index: 0;
+  padding-top: 5%;
+  margin-top: 20%;
+  height: 500px;
+}
+
+.expert-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -20%;
+  margin-bottom: 10%;
+}
+
+/* expert cards */
+/* laptop */
+.certificates {
+  margin: 180px auto;
+}
+.certificates-title {
+  text-transform: uppercase;
+  color: #000000;
+  /* margin-top: 140px; */
+}
+
+.certificates-box-wrapper {
+  /* margin-bottom: 110px; */
+  border-radius: 42px;
+  padding: 2px;
+  background: linear-gradient(232.45deg, #ff820f -17.71%, #ffc85c 133.24%);
+}
+
+.certificates-box-inner {
+  background: #f8f8f8;
+  border-radius: 42px;
+  padding: 40px 80px;
+}
+
+.certificates-box-inner > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #000000;
+  margin: 0;
+  width: 50%;
+}
+
+.certificates-img {
+  position: absolute;
+  right: -87px;
+  top: 0;
+}
+.certificates a {
+  padding: 12px 56px;
+  background: linear-gradient(257.81deg, #74b3ff -40.45%, #3667c0 85.59%);
+  border-radius: 12px;
+  color: white ;
+}
+/* cpd */
+.cpd-wrapper {
+}
+/* calculator */
+.calculator-title p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.choose-academy p {
+  font-size: 16px;
+}
+.choose-installments p {
+  font-size: 16px;
+}
+.price-calculator {
+  padding-top: 15%;
+  margin-bottom: 18%;
+}
+.price-calculator p {
+  font-size: 24px;
+  width: 80%;
+}
+.price-calculator p span {
+  font-size: 16px;
+}
+
+.price-calculator p span {
+  color: #9b9b9b;
+  font-size: 24px;
+}
+.calculator-title {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin-top: 5%;
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 32px;
+  background-clip: padding-box;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.calculator-title::after {
+  position: absolute;
+  top: 28px;
+  bottom: -10px;
+  left: -4px;
+  right: -4px;
+  background: #fa9600;
+  content: "";
+  z-index: -1;
+  border-radius: 32px;
+}
+.calculator-title span {
+  font-size: 43px;
+  background: #fa9600;
+  border-radius: 10px;
+  font-weight: 900;
+  padding: 1%;
+}
+.calculator-title p {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2%;
+}
+.choose-academy p,
+.choose-installments p {
+  color: #9b9b9b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.choose-academy div,
+.choose-installments div {
+  background: #fa9600;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+.choose-academy span,
+.choose-installments span {
+  padding: 5px 10px;
+}
+.choose-academy span:hover,
+.choose-installments span:hover {
+  cursor: pointer;
+}
+.active {
+  background-color: white;
+  color: #0a0a0a !important;
+
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.price-calculator {
+  width: 100%;
+  height: 120px;
+  border-bottom: 4px solid #fa9600;
+  padding-top: 5%;
+}
+.price-calculator p {
+  font-size: 42px;
+  background-color: white;
+  border-radius: 10px;
+  border: 4px solid #fa9600;
+  color: black;
+  font-weight: 900;
+  width: 18%;
+  margin: auto;
+  padding: 0% 1%;
+}
+.price-calculator p span {
+  color: #9b9b9b;
+  font-size: 16px;
+}
+
+/* calculator */
+.fast-track {
+  color: #ffffff;
+  background: linear-gradient(232.45deg, #dc49a1 -17.71%, #bf3e98 4.65%, #ad3893 17.92%, #150166 133.24%);
+  border-radius: 12px;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: 5% auto;
+  transition: transform 0.2s;
+}
+.fast-track img {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+.fast-track:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.wheel {
+  background: linear-gradient(274.55deg, #ffb571 2.01%, #ffffff 84.36%);
+  padding: 64px 0px;
+}
+
+/* Register form */
+.register-form {
+  background: #f8f8f8;
+  border-top: 2px solid #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
+  margin-top: 128px;
+}
+.register-form h2 {
+  color: #0a0a0a;
+  text-align: center;
+  border: 2px solid #0a0a0a;
+  border-radius: 12px;
+  padding: 8px 32px;
+  background: #f8f8f8;
+  width: 45%;
+  margin: -39px auto 0 auto;
+  position: absolute;
+  left: 28%;
+}
+.register-form-wrapper {
+  padding: 8% 0%;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.register-form-wrapper h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #606060;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.register-form-wrapper h3 span {
+  font-size: 20px;
+}
+.register-form label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #606060;
+  margin: 0;
+}
+.register-form input,
+.register-form select {
+  background: #ffffff;
+  border: 1px solid #919191;
+  border-radius: 8px;
+  width: 100%;
+  padding: 5px 10px;
+}
+.register-form button {
+  position: absolute;
+  left: 43%;
+  background: #0a0a0a;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  bottom: -30px;
+  border: 2px solid #000000;
+}
+.register-form button:active {
+  background: #faad01;
+  border: 2px solid #000000;
+  /* Shadow/Buttons */
+
+  box-shadow: 0px 12px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+.terms {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #707070;
+  width: 20%;
+  margin: auto;
+  padding-top: 45px;
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .header-right {
+    width: 100%;
+  }
+  .mobile-bg {
+    background: url(../../../assets/digital-marketing/mobile-bg.png);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .first-row-students {
+    width: 1000%;
+    animation: first-marquee-students 75s linear infinite;
+  }
+  @keyframes first-marquee-students {
+    from {
+      right: 1000%;
+    }
+    to {
+      right: 0%;
+    }
+  }
+  /* free-video form */
+  .over-career-p {
+    margin: 5% 0%;
+    font-weight: 500 !important;
+    text-align: left;
+    width: 100%;
+  }
+  .career-form-wrapper {
+    background: linear-gradient(232.45deg, #ef5da8 -17.71%, #ff8800 133.24%);
+    box-shadow: 0px 35px 26px -25px rgba(107, 90, 0, 0.28);
+    border-radius: 32px;
+    color: white;
+    width: 100%;
+    margin: 0% auto 5% auto;
+    text-align: left;
+    padding: 3% 5%;
+  }
+  .career-form-wrapper h2 {
+    text-transform: uppercase;
+    font-weight: 900 !important;
+  }
+  .career-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-logo {
+    width: 30% !important;
+    top: 0;
+    right: 20px;
+  }
+
+  .card-shadow {
+    height: 250px;
+    box-shadow: none;
+  }
+  .expert {
+    padding: 7%;
+    height: 420px;
+  }
+
+  .expert-img {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  .fast-track {
+    width: 100%;
+    padding: 24px 0px;
+  }
+  .fast-track h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .certificates-box-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* calculator */
+  .calculator-title {
+    margin-top: 10%;
+  }
+  .price span {
+    font-size: 24px;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .calculator-title span {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .calculator-title p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .calculator-title::after {
+    position: absolute;
+    top: 18px;
+    bottom: 0px;
+    left: -4px;
+    right: -4px;
+  }
+  .price-calculator p {
+    width: 80%;
+    font-size: 24px;
+  }
+  .price-calculator {
+    padding-top: 15%;
+    height: 107px;
+    text-align: center;
+  }
+  .choose-academy,
+  .choose-installments {
+    text-align: center;
+  }
+  .choose-academy div {
+    flex-direction: column;
+  }
+  .choose-academy span,
+  .choose-installments span {
+    padding: 15px;
+  }
+  .choose-academy p,
+  .choose-installments p {
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* calculator */
+  .certificates {
+    margin: 88px auto;
+  }
+  .certificates-box-inner {
+    padding: 18px 10px;
+  }
+
+  .certificates-box-inner p {
+    width: 100%;
+  }
+  /* Register form */
+  .register-form {
+    margin-top: 90px;
+  }
+  .register-form h2 {
+    width: 90%;
+    left: 5%;
+  }
+  .register-form-wrapper {
+    padding: 5% 0%;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+  }
+  .register-form-wrapper h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .register-form-wrapper h3 span {
+    font-size: 16px;
+  }
+  .register-form label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #606060;
+    margin: 0;
+  }
+  .register-form input,
+  .register-form select {
+    background: #ffffff;
+    border: 1px solid #919191;
+    border-radius: 8px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .register-form button {
+    position: absolute;
+    left: 25%;
+    background: #0a0a0a;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    bottom: -30px;
+    border: 2px solid #000000;
+  }
+  .terms {
+    font-size: 10px;
+    line-height: 15px;
+    width: 80%;
+    margin: auto;
+    padding-top: 45px;
+  }
+}
+
+/* POP UP CSS */
+/* Modal Content */
+.modal-contentt {
+  margin: auto !important;
+  padding: 20px !important;
+  border: 1px solid #888 !important;
+  /* width: 30%; */
+  height: 100vh !important;
+  position: fixed !important;
+  z-index: 99 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: rgb(0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.modal-content-inner {
+  background-color: white;
+  width: 30%;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hide {
+  display: none !important;
+}
+#closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: transform 0.2s;
+}
+#closeBtn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* h5 {
+  font-size: 20px;
+  line-height: 29px;
+  color: #555555;
+  text-align: center;
+} */
+.pop-up-label {
+  color: #2b2b2b;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 1%;
+  margin-bottom: 2px;
+}
+.pop-up-input {
+  border-radius: 4px;
+  width: 100%;
+  border: #979797 1px solid;
+  padding: 0px 6px;
+}
+._form_159 {
+  width: 100%;
+}
+.submit-pop-up-btn {
+  background: #004cff;
+  border-radius: 12px !important;
+  width: 100%;
+  border: none;
+  padding: 1%;
+  margin-top: 5% !important;
+  font-weight: 700;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: white;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 5%;
+}
+.date p {
+  margin: 0;
+}
+.date img {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 992px) {
+  .modal-contentt {
+    padding-top: 8% !important;
+  }
+  .modal-content-inner {
+    width: 90%;
+    padding: 24px;
+  }
+  .pop-up-input {
+    padding: 3px;
+  }
+}
+
+/* POP UP CSS */
+/* Modal Content */
+.modal-contentt {
+  margin: auto !important;
+  padding: 20px !important;
+  border: 1px solid #888 !important;
+  /* width: 30%; */
+  height: 100vh !important;
+  position: fixed !important;
+  z-index: 99 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: rgb(0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.modal-content-inner {
+  background-color: white;
+  width: 30%;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hide {
+  display: none !important;
+}
+#closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: transform 0.2s;
+}
+#closeBtn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* h5 {
+  font-size: 20px;
+  line-height: 29px;
+  color: #555555;
+  text-align: center;
+} */
+.pop-up-label {
+  color: #2b2b2b;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 1%;
+  margin-bottom: 2px;
+}
+.pop-up-input {
+  border-radius: 4px;
+  width: 100%;
+  border: #979797 1px solid;
+  padding: 0px 6px;
+}
+._form_159 {
+  width: 100%;
+}
+.submit-pop-up-btn {
+  background: #004cff;
+  border-radius: 12px !important;
+  width: 100%;
+  border: none;
+  padding: 1%;
+  margin-top: 5% !important;
+  font-weight: 700;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: white;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 5%;
+}
+.date p {
+  margin: 0;
+}
+.date img {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 992px) {
+  .modal-contentt {
+    padding-top: 8% !important;
+  }
+  .modal-content-inner {
+    width: 90%;
+    padding: 24px;
+  }
+  .pop-up-input {
+    padding: 3px;
+  }
+}

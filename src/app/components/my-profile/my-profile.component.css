@@ -1,0 +1,113 @@
+h1
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    color: #555555;
+}
+h3
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #2B2B2B;
+}
+.upload-photo, .delete-photo
+{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0% 3%;
+    height: 36px;
+}
+.upload-photo
+{
+    background: #FFBD11;
+    width: 250px;
+}
+.delete-photo
+{
+    background: #E5E5E5;
+}
+.form-group input
+{
+    width: 400px;
+    border-radius: 12px;
+    border: 1px solid #D5D5D5;
+}
+.form-group label, .label
+{
+    font-size: 18px;
+    color: #555555;
+    font-weight: 600;
+}
+.custom-file
+{
+    display: block;
+    width: 400px;
+}
+.custom-file-label
+{
+    border-radius: 12px;
+    font-size: 16px !important;
+}
+.form-group p 
+{
+    font-size: 16px;
+    color: #AAAAAA;
+}
+.btn-radio
+{
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+}
+.btn-group
+{   
+    background: #E5E5E5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 70%;
+}
+.btn.active {
+    background: #FFFFFF  !important;
+    box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.21)  !important;
+    border-radius: 12px  !important;
+    font-weight: 700;
+}
+.save-wrapper
+{
+    width: 50%;
+}
+.close-acc
+{
+    background: #DD3737;
+    border-radius: 8px; 
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 187px;
+    height: 42px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .btn-group
+    {
+        width: 100%;
+    }
+    .btn-radio
+    {
+        font-size: 15px;
+    }
+    .save-wrapper
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+h2 {
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 120%;
+    color: #000000;
+}
+
+img 
+{
+    transition: transform .2s;
+}
+img:hover
+{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    h2 
+    {
+        font-size: 24px;
+    }
+    img {
+        width: 25%;
+    }
+}

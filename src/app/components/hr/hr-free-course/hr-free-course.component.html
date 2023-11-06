@@ -1,0 +1,126 @@
+<app-navbar></app-navbar>
+<div class="d-flex d-lg-block flex-column">
+  <app-sticky-card [courseImg]="freeCourseImg" [iconsColor]="iconsColor" [innerBackgroundColor]="innerBackgroundColor" (click)="goDown1()" [academyInfo]="academyInfo"
+    [borderColor]="borderColor" [mainColor]="mainColor" [titleColor]="titleColor">
+  </app-sticky-card>
+
+  <div class="page-header order-1 order-lg-1">
+    <br><br>
+    <div class="col-lg-6" style="color: white">
+      <h1 class="title mb-4 f-43">KICK-START YOUR HR CAREER TODAY!</h1>
+      <p class="text-left page-description f-24">
+        Start with a free trial to the introductory HR course and join the full Creative Hub HR Academy program. 
+      </p>
+      <br>
+    </div>
+  </div>
+
+  <div class="page-bg order-3">
+    <div class="sticky-container">
+      <app-what-you-learn [text]="whatYouLearn" [borderColor]="whatYourLearnBorder"></app-what-you-learn>
+      <app-program [borderColor]="whatYourLearnBorder" [circleBorderColor]="'rgba(55, 72, 221, 1)'" [programme]="programme"
+        [lecturer]="lecturer"></app-program>
+
+
+      <app-free-program-for [borderColor]="borderColor">
+        <p class="mb-4 program-for-text">
+          We came up with this program for everyone who wants to start working in HR, and therefore wants to professionally develop in this field. To start this program all you need is MOTIVATION!
+        </p>
+        <ul class="ms-2 ps-0 program-for-text">
+          <li class="d-flex align-items-center">
+            <img class="h-100" src="assets/Images/HrImages/free-course/yellow_tick.png">
+            <p class="ms-2">
+              Beginners with no previous expirience, whose goal is to build their career in the HR industry
+            </p>
+          </li>
+          <li class="d-flex align-items-center">
+            <img src="assets/Images/HrImages/free-course/yellow_tick.png">
+            <p class="ms-2">Anyone who wants to make a career change or retrain</p>
+          </li>
+          <li class="d-flex align-items-center">
+            <img src="assets/Images/HrImages/free-course/yellow_tick.png">
+            <p class="ms-2">People who have some basic knowledge in this field, but want to upgrade their skills</p>
+          </li>
+        </ul>
+      </app-free-program-for>
+
+      <app-questions-and-answers [questions]="questions" [borderColor]="borderColor"></app-questions-and-answers>
+    </div>
+  </div>
+</div>
+
+<div class="section-hr"></div>
+
+<div class="container" id="form">
+  <div class="form-card">
+    <h3 class="f-32 mt-3 form-title">Apply for Free Trial</h3>
+    <h4 class="f-18 form-sub-title">Introduction to HR</h4>
+
+    <form method="POST" action="https://akoskarova.activehosted.com/proc.php" id="_form_47_"
+          class="_form _form_47 _inline-form  _dark" novalidate>
+      <input type="hidden" name="u" value="47"/>
+      <input type="hidden" name="f" value="47"/>
+      <input type="hidden" name="s"/>
+      <input type="hidden" name="c" value="0"/>
+      <input type="hidden" name="m" value="0"/>
+      <input type="hidden" name="act" value="sub"/>
+      <input type="hidden" name="v" value="2"/>
+      <input type="hidden" name="or" value="18590ca9498db7178f5d1683c60dc02e"/>
+      <div class="_form-content">
+        <div class="d-flex flex-column flex-md-row gap-md-3">
+          <div class="_form_element _x29523774 _full_width ">
+            <label for="fullname" class="_form-label">
+              Emri &amp; Mbiemri*
+            </label>
+            <div class="_field-wrapper">
+              <input type="text" id="fullname" name="fullname" placeholder="Type your name" required/>
+            </div>
+          </div>
+          <div class="_form_element _x62416642 _full_width ">
+            <label for="email" class="_form-label">
+              Email*
+            </label>
+            <div class="_field-wrapper">
+              <input type="text" id="email" name="email" placeholder="Type your email" required/>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="_form_element _x90451516 _full_width ">
+            <label for="phone" class="_form-label">
+              Numëri kontaktues*
+            </label>
+            <div class="_field-wrapper">
+              <input type="text" id="phone" name="phone" placeholder="Type your phone number" required/>
+            </div>
+          </div>
+
+
+          <div class="_clear-element">
+          </div>
+        </div>
+
+        <div class="_button-wrapper _full_width text-center">
+          <p class="apply-notes">The first 2 classes are free and then you pay €19.99 If you enroll in the Academy the course will be free.</p>
+
+          <button id="_form_47_submit" class="_submit" type="submit">
+            REGJISTROHU
+          </button>
+
+          <p class="apply-desc">
+            By clicking on “Submit” I agree and give approval to Kreative Hub LLC to use and process my personal
+            data, later store it as long as necessary for the purpose for which the data was collected, after which
+            they will be deleted in accordance with the Law on Personal Data Protection. I reserve the right at any
+            time to withdraw my consent.
+          </p>
+        </div>
+      </div>
+      <div class="_form-thank-you" style="display:none;">
+      </div>
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>
+

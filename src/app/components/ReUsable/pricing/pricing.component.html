@@ -1,0 +1,87 @@
+<div class="section-m">
+    <h2>CHOOSE THE TRACK THAT best fits your needs</h2>
+    <div class="container">
+        <div class="d-block d-lg-flex justify-content-center">
+            <div class="academy-card">
+                <div class="academy-title-wrapper"
+                    [style.background]="mainBorderColor">
+                    <h3>JUST ACADEMY</h3>
+                </div>
+                <div class="academy-benefits">
+                    <div class="academy-info">
+                        <div class="hours">
+                            {{arrayPricing[0].hours}}
+                        </div>
+                        <div class="academy-benifits-ul">
+                            <p *ngFor="let justAcademyUl of justAcademyInfo">
+                                {{justAcademyUl}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-bottom-wrapper"
+                        [style.background]="mainBorderColor">
+                        <div class="card-bottom-inner text-center">
+                            <h4>{{arrayPricing[0].price}}€</h4>
+                            <span>+ VAT</span>
+                            <h5>0% interest for payment on installments</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="academy-card">
+                <div class="academy-title-wrapper eu-certified"
+                    [style.background]="mainBorderColor">
+                    <h3 [style.background]="euCertifiedBg">EU CERTIFIED</h3>
+                    <span>Most popular</span>
+                </div>
+                <div class="academy-benefits">
+                    <div class="academy-info">
+                        <div class="hours">
+                            {{arrayPricing[1].hours}}
+                        </div>
+                        <div class="academy-benifits-ul">
+                            <p *ngFor="let euCertifiedInfo of euCertifiedInfo">
+                                {{euCertifiedInfo }}
+                            </p>
+                            <img [src]="arrayPricing[1].ects" alt="ECTS">
+                        </div>
+                    </div>
+                    <div class="card-bottom-wrapper"
+                        [style.background]="mainBorderColor">
+                        <div class="card-bottom-inner text-center">
+                            <h4>{{arrayPricing[1].price}}€</h4>
+                            <span>+ VAT</span>
+                            <h5>0% interest for payment on installments</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="academy-card fast-track" [style.display]="showFastTrack">
+            <div class="academy-title-wrapper"  [style.background]="mainBorderColor">
+                <h3>FAST TRACK</h3>
+            </div>
+            <div class="academy-benefits">
+                <div class="academy-info">
+                    <div class="hours">
+                        {{arrayPricing[2].hours}}
+                    </div>
+                    <div class="academy-benifits-ul">
+                        <p *ngFor="let fastTrackUl of fastTrackInfo">
+                            {{fastTrackUl}}
+                        </p>
+                        <img [src]="arrayPricing[2].ects" alt="ECTS">
+                    </div>
+                </div>
+                <div class="card-bottom-wrapper"
+                [style.background]="mainBorderColor">
+                    <div class="card-bottom-inner text-center">
+                        <h4>{{arrayPricing[2].price}}€</h4>
+                        <span>+ VAT</span>
+                        <h5>0% interest for payment on installments</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

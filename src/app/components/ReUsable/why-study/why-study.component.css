@@ -1,0 +1,36 @@
+.why-study-wrapper
+{
+    display: flex;
+    margin: 5% 0%;
+    justify-content: space-between;
+}
+.why-study-element img
+{
+    height: 70px;
+    width: 80px;
+}
+.why-study-title
+{
+    font-size: 43px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.why-study-text
+{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.why-study-element p 
+{
+    font-size: 18px;
+}
+@media only screen and (max-width: 758px) {
+    .why-study-wrapper
+    {
+        margin-top: 10%;
+    }
+    } 

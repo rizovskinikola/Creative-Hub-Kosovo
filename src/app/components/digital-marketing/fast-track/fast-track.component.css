@@ -1,0 +1,412 @@
+* {
+    font-family: Montserrat, sans-serif;
+}
+h2 {
+    font-weight: 900 !important;
+    font-size: 42px !important;
+    line-height: 120% !important;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 32px !important;
+    line-height: 120% !important;
+    font-weight: 700 !important;
+}
+h4 {
+    font-size: 24px !important;
+    line-height: 120% !important;
+}
+p {
+    font-size: 18px !important;
+    line-height: 120% !important;
+}
+.hero {
+    background: url(../../../../assets/hr/fast-track/hero.png);
+    background-size: cover;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    background-size: 100% 100%;
+}
+.hero h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+}
+.hero h2 {
+    padding-top: 3%;
+}
+.hero h3 {
+    margin: 2% 0%;
+}
+.hero h4 {
+    font-weight: 600;
+}
+.hero p {
+    color: #606060;
+    padding: 3% 0%;
+}
+.program-card {
+    position: relative;
+    background: #f8f8f8;
+    border: 3px solid #ffffff;
+    box-shadow: 0 39px 54px rgba(107, 90, 0, 0.24);
+    border-radius: 59px;
+    padding: 51px 23px;
+    height: 380px;
+    margin: 10% 0%;
+}
+
+.program-card img {
+    position: absolute;
+    right: -16px;
+    top: -50px;
+    max-width: 30%;
+}
+
+.program-card h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0a0a0a;
+    margin-bottom: 32px;
+}
+
+.program-card p {
+    color: #0a0a0a;
+    margin: 0;
+}
+.what-you-get {
+    padding: 3% 0%;
+}
+.what-you-get p {
+    margin: 0;
+}
+.program-wrapper {
+    padding: 1px;
+    background: linear-gradient(180deg, #3f84ce 0%, #dee2ff 76.88%);
+    border-radius: 12px;
+    margin: 2% 0%;
+}
+.program-a {
+    display: none;
+    background: #ffffff;
+    border-radius: 0px 0px 12px 12px;
+}
+.program-q-fast-track {
+    background: #d0e2ff;
+    border-radius: 12px;
+    padding: 16px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    margin: 0;
+}
+.mentor-title {
+    color: #0a0a0a;
+    margin-top: 5%;
+}
+.mentor-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin: 5% 0%;
+}
+.mentor-wrapper img {
+    max-width: 100%;
+    height: auto;
+    padding-right: 3%;
+}
+.mentor-wrapper a {
+    background: linear-gradient(232.45deg, #a3c7ff -17.71%, #2388ff 133.24%);
+    border-radius: 10px;
+    padding: 12px 42px;
+    color: white;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.why-fast-track-bg {
+    background: linear-gradient(83.55deg, #74b3ff -21.84%, #0a5cee 86.79%);
+    margin-bottom: 15%;
+}
+
+.wft-left {
+    color: white;
+    margin: 3% 0%;
+}
+
+.elena {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.elena:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+.why-fast-track-card {
+    background: linear-gradient(321.24deg, rgba(255, 255, 255, 0.54) 22.98%, rgba(248, 248, 248, 0) 100%);
+    box-shadow: 0px 47px 43px -24px rgba(9, 127, 201, 0.1);
+    backdrop-filter: blur(69px);
+    padding: 2%;
+    border-radius: 24px;
+    position: absolute;
+    margin-top: -10%;
+}
+
+.video {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.video:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.fast-track-student-card-wrapper {
+    background: url(../../../../assets/hr/fast-track/testemonial-bg.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2% 0%;
+    margin: 3% 0%;
+}
+.calendly {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+}
+.fast-track-student-card-inner {
+    background: linear-gradient(321.24deg, rgba(255, 255, 255, 0.54) 22.98%, rgba(248, 248, 248, 0) 100%);
+    box-shadow: 0px 47px 43px -24px rgba(9, 127, 201, 0.1);
+    backdrop-filter: blur(69px);
+    border-radius: 24px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin: 3% 0%;
+    align-items: center;
+    padding: 1%;
+}
+.card-left,
+.card-right {
+    width: 50%;
+}
+.card-left img {
+    max-width: 100%;
+    height: auto;
+}
+.card-left h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 5% 0%; */
+}
+.call a {
+    text-decoration: none;
+    color: black;
+}
+.other-student-card {
+    background: linear-gradient(180deg, #eaeaea 0%, #efefef 43.51%);
+    box-shadow: 0px 47px 43px -24px rgba(201, 201, 201, 0.1);
+    border-radius: 24px;
+    padding: 24px;
+    margin: 5% 0%;
+}
+.other-student-card h5 
+{
+    font-size: 16px;
+}
+.accordion-item {
+    background: #ffffff;
+    border: 1px solid #dee2ff !important;
+    border-top: 1px solid #dee2ff !important;
+    border: 1px solid;
+    width: 90%;
+    margin: 2% auto;
+  }
+  .accordion-item button {
+    padding: 1%;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .accordion-fast-track {
+    background: #d0e2ff;
+  }
+@media only screen and (max-width: 991px) {
+    .hero {
+        background-size: cover;
+        padding: 5% 0%;
+    }
+    h2 {
+        font-size: 24px !important;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    h4 {
+        font-size: 16px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+    .hero h1 {
+        font-size: 16px !important;
+    }
+    .hero h2 {
+        padding-top: 3%;
+    }
+
+    .hero p {
+        padding: 3% 0%;
+    }
+    .program-card {
+        margin: 7% auto;
+        padding: 3%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90;
+    }
+    .program-card h3 {
+        margin-bottom: 10px;
+    }
+
+    .program-card p {
+        width: 100%;
+    }
+
+    .program-card img {
+        max-width: 50%;
+        top: -25px;
+    }
+    .mentor-wrapper {
+        display: flex;
+        align-items: flex-start;
+        margin: 10% 0%;
+    }
+    .mentor-wrapper img {
+        width: 50%;
+    }
+    .calendly {
+        display: flex;
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .calendly p {
+        padding-bottom: 40px;
+    }
+    .mentor-wrapper a {
+        background: linear-gradient(232.45deg, #ef5da8 -17.71%, #ff8800 133.24%);
+        border-radius: 10px;
+        padding: 12px 42px;
+        color: white;
+        font-weight: 700;
+        margin-left: 30px;
+    }
+    .why-fast-track-section {
+        margin-bottom: 0;
+    }
+
+    .blue-title {
+        padding: 5%;
+    }
+
+    .why-fast-track-card {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 5%;
+        backdrop-filter: none;
+    }
+    .fast-track-student-card-inner {
+        background: linear-gradient(321.24deg, rgba(255, 255, 255, 0.54) 22.98%, rgba(248, 248, 248, 0) 100%);
+        box-shadow: 0px 47px 43px -24px rgba(9, 127, 201, 0.1);
+        backdrop-filter: none;
+        border-radius: 24px;
+        display: flex;
+        position: relative;
+        z-index: 2;
+        margin: 3% 0%;
+        align-items: center;
+        padding: 1%;
+        flex-direction: column;
+    }
+    .card-left,
+    .card-right {
+        width: 100%;
+    }
+    .fast-track-student-card-wrapper {
+        background: none;
+    }
+    .call {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5% 0%;
+        flex-direction: column;
+    }
+    .accordion-item {
+        width: 100%;
+        margin: 2% auto;
+      }
+      .accordion-item button {
+        padding: 4%;
+      }
+}
+
+
+.dardania {
+    border-radius: 32px;
+    background: linear-gradient(270.08deg, #eff1f4 3.41%, #ffffff 107.66%);
+    box-shadow: 0px 26px 64px rgba(0, 0, 0, 0.27);
+    text-align: center;
+    padding: 5%;
+    margin-top: -8%;
+    margin-bottom: 5%;
+}
+.dardania span {
+    color: #123d7e;
+    text-decoration-line: underline;
+}
+.dardania h4 {
+    margin: 3% 0%;
+}
+.dardania h2 {
+    color: #0a0a0a;
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.dardania h4 {
+    font-size: 24px;
+    line-height: 120%;
+    color: #0a0a0a;
+} 
+.dardania img 
+{
+    transition: transform .2s;
+    max-width: 100%;
+    height: auto;
+}
+.dardania img:hover 
+{
+    transform: scale(0.95);
+}
+@media only screen and (max-width: 991px) {
+    .dardania h2 {
+        color: #0a0a0a;
+        font-size: 24px;
+    }
+    .dardania h4 {
+        font-size: 18px;
+    }
+    .dardania {
+        margin: 10% 0%;
+    }
+}

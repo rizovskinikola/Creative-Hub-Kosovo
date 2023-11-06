@@ -1,0 +1,38 @@
+<div class="row m-0">
+  <div class="col-md-5 d-none d-lg-block" style="padding: 0;">
+    <img src="assets/Images/login_img.png" class="img-fluid" alt="Login Image"></div>
+  <div class="col-md-7 login-bg">
+    <div class="text-right">
+      <button type="button" class="btn-close" (click)="closeModal()"></button>
+    </div>
+    <h3 class="mb-3">SIGN IN TO YOUR ACCOUNT</h3>
+    <div class="mb-3">
+      <label for="loginEmail" class="form-label">E-mail address</label>
+      <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="loginPassword" class="form-label">Password</label>
+      <input type="password" class="form-control" id="loginPassword" placeholder="you@example.com">
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="loginRememberMe">
+      <label class="form-check-label" for="flexCheckDefault">
+        Remember me
+      </label>
+      <a href="" data-bs-target="#modalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot
+        password?</a>
+    </div>
+
+    <div class="text-center mt-3 mb-3">
+      <button type="submit" class="submit-btn">Sign in</button>
+    </div>
+    <p class="text-center small-text">Or continue with</p>
+    <div class="social-apps">
+      <button><img src="assets/Images/fb.svg" class="responsive" alt=""></button>
+      <button><img src="assets/Images/google.svg" class="responsive" alt=""></button>
+    </div>
+    <div class="text-center small-text mt-3">First time here?
+      <a class="sign-up-text" (click)="openRegisterModal()">Sign up</a>
+    </div>
+  </div>
+</div>

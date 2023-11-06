@@ -1,0 +1,19 @@
+.active-black-color
+{
+    background: #2B2B2B !important;
+    box-shadow: inset 6px 0px 0px #FFBD11;
+    border-radius: 8px;
+    color: #FFBD11;
+}
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+}
+.navigation button
+{
+    margin-top: 5%;
+    background: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+}

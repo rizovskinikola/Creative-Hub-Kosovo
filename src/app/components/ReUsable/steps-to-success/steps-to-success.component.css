@@ -1,0 +1,54 @@
+h3 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+.first-step-wrapper {
+    background: linear-gradient(90deg, #fac739 -0.79%, #fb0d6a 100.79%);
+    border-radius: 24px;
+    padding: 3px;
+    margin: 2% 0%;
+}
+.second-step-wrapper {
+    background: linear-gradient(90deg, #FB0E66 0%, #1CB2E0 100.01%);
+    border-radius: 24px;
+    padding: 3px;
+    margin: 2% 0%;
+}
+.third-step-wrapper {
+    background: linear-gradient(90deg, #55EAF7 0%, #52C0E9 20.78%, #4E78D2 58.86%, #4B4AC4 86.25%, #4A39BE 100%);
+    border-radius: 24px;
+    padding: 3px;
+    margin: 2% 0%;
+}
+.step-inner {
+    display: flex;
+    border-radius: 24px;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: #ffffff;
+}
+.step-inner img {
+    margin-right: 15px;
+}
+.step-inner p {
+    font-size: 18px;
+    line-height: 120%;
+    color: #0a0a0a;
+}
+.step-inner p span {
+    font-weight: 300 !important;
+    font-size: 16px;
+    line-height: 120%;
+    color: #606060;
+}
+
+@media only screen and (max-width: 991px) {
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}

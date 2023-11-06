@@ -1,0 +1,139 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "~@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$CreativeHubKos-primary: mat.define-palette(mat.$indigo-palette);
+$CreativeHubKos-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$CreativeHubKos-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$CreativeHubKos-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $CreativeHubKos-primary,
+      accent: $CreativeHubKos-accent,
+      warn: $CreativeHubKos-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($CreativeHubKos-theme);
+
+@import "~node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "~node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  src: url("assets/fonts/Montserrat-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: url("assets/fonts/Montserrat-ExtraLight.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/Montserrat-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/Montserrat-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/Montserrat-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("assets/fonts/Montserrat-ExtraBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets/fonts/Montserrat-Black.ttf") format("ttf");
+}
+
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.section-m {
+  margin: 128px 0px;
+}
+.title-m 
+{
+  padding-bottom: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .section-m {
+    margin: 90px 0px;
+  }
+  .title-m 
+  {
+    padding-bottom: 24px;
+  }
+}
